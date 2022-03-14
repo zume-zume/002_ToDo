@@ -34,7 +34,7 @@ taskSubmit.addEventListener("click", (evt) => {
 });
 
 //Enterを押したときにも、イベントを発動（タスクが追加）
-task_value.document.onkeydown = function(evt) {
+taskValue.document.onkeydown = function(evt) {
   if (evt.key === 'Enter') {
     evt.preventDefault();
     const task = taskValue.value;
