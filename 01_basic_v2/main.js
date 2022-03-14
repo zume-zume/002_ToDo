@@ -34,11 +34,20 @@ taskSubmit.addEventListener("click", (evt) => {
 });
 
 //Enterを押したときにも、イベントを発動（タスクが追加）
-taskValue.document.onkeydown = function(evt) {
-  if (evt.key === 'Enter') {
+// taskValue.document.onkeydown = (evt) => {
+//   if (evt.key === 'Enter') {
+//     evt.preventDefault();
+//     const task = taskValue.value;
+//     addTasks(task);
+//     taskValue.value = "";
+//   }
+// }
+
+taskValue.addEventListener("keydown", (evt) => {
+  if (evt.keyCode === 13) {
     evt.preventDefault();
     const task = taskValue.value;
     addTasks(task);
     taskValue.value = "";
   }
-}
+});
