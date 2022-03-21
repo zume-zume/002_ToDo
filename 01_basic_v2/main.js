@@ -33,6 +33,16 @@ taskSubmit.addEventListener("click", (evt) => {
   taskValue.value = "";
 });
 
+//Enterキーを押したときもイベントが発火できるようにする。
+taskValue.addEventListener("keydown", (evt) => {
+  if (evt.keyCode === 13) {
+    evt.preventDefault();
+    const task = taskValue.value;
+    addTasks(task);
+    taskValue.value = "";
+  }
+});
+
 //Enterを押したときにも、イベントを発動（うまくいかないので、ボツ）
 // taskValue.document.onkeydown = (evt) => {
 //   if (evt.key === 'Enter') {
@@ -43,12 +53,3 @@ taskSubmit.addEventListener("click", (evt) => {
 //   }
 // }
 
-//Enterキーを押したときもイベントが発火できるようにする。
-taskValue.addEventListener("keydown", (evt) => {
-  if (evt.keyCode === 13) {
-    evt.preventDefault();
-    const task = taskValue.value;
-    addTasks(task);
-    taskValue.value = "";
-  }
-});
