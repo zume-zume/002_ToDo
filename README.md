@@ -11,11 +11,14 @@
 # 01_basic（HTML、CSS、JavaScriptで）  
 オーソドックスにHTML、CSS、JavaScriptで  
 ・v1とりあえずできた。でもしょぼい。いくつか改良点を見繕う  
+【改善点】  
   ・UIがとにかく悪いので可愛くしたい。  
-  ・HTMLのinputタグでenter押したら全部消える（笑）  
-  ・できれば他の要素も追加したいなあ
+  ・HTMLのinputタグでenter押したら全部消える。  
+  ・できれば日付とかの要素も追加したい。
 
 # 02_basicその２
+・Enter押したら発火できるようにした。  
+・
 
 # 03_Firebaseを使ってみて  
 
